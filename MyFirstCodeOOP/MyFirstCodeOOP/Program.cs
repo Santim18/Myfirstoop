@@ -6,13 +6,18 @@ namespace MyFirstCodeOOP
     {
         static void Main(string[] args)
         {
-            int d = Convert.ToInt32(Console.ReadLine());
-            int m = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-
-
-            try //Intenta hacer lo que esta por dentro si no funciona salta al catch capturando el error
+      
+            try 
             {
+                Console.WriteLine("Ingrese el dia");
+                int d = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(" ");
+                Console.WriteLine("Ingrese el mes");
+                int m = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(" ");
+                Console.WriteLine("Ingrese el dia");
+                int y = Convert.ToInt32(Console.ReadLine());
+
                 var dateObject = new Date(d,m,y);
                 Console.WriteLine(dateObject);
             }

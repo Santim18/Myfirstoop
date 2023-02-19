@@ -25,7 +25,7 @@ namespace MyFirstCodeOOP
         {
             return $"{_year:0000}/{_month:00}/{_day:00}";
         }
-
+        #region ValidateDay
         private int ValidateDay(int day, int month)
         {
             if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
@@ -51,7 +51,7 @@ namespace MyFirstCodeOOP
             }
             throw new DayException("The day is invalid");
         }
-   
+        #endregion
 
         private int ValidateMonth(int month)
         {
