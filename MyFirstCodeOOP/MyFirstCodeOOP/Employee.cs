@@ -35,7 +35,8 @@ namespace MyFirstCodeOOP
                HiringDate,
                Isactive);
 
-            /*
+            /* ----"Interpolacion"----- 
+             * 
              * return $"-----EMPLOYEE----- \n\t" +
                 $"ID: {Id} \n\t" +
                 $"First Name: {FirstName} \n\t " +
