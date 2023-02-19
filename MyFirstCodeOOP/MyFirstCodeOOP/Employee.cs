@@ -24,7 +24,7 @@ namespace MyFirstCodeOOP
             return $"-----EMPLOYEE----- \n\t" +
                 $"ID: {Id} \n\t" +
                 $"First Name: {FirstName} \n\t " +
-                $"Last Name: {Lastname} \n\t " +
+                $"Last Name:{Lastname} \n\t " +
                 $"Birth Date: {BirthDate} \n\t" +
                 $" Hiring Date: {HiringDate} \n\t" +
                 $" Is Active: {Isactive}";
