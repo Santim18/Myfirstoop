@@ -53,6 +53,7 @@ namespace MyFirstCodeOOP
         }
         #endregion
 
+        #region ValidateMonth
         private int ValidateMonth(int month)
         {
             if (month >=1 && month <= 12)
@@ -63,7 +64,7 @@ namespace MyFirstCodeOOP
 
            
         }
-
+        #endregion
 
 
 
