@@ -27,7 +27,7 @@ namespace MyFirstCodeOOP
                 $" \n\tValue to pay................{GetValueToPay():C2}" ;
         }
 
-        public float ConvertPercentage(float commissionPercentage)
+        public float ConvertPercentage(float CommissionPercentage)
         {
             return (CommissionPercentage/100);
         }
