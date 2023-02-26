@@ -11,6 +11,7 @@ namespace MyFirstCodeOOP
 
 
         #endregion
+
         #region Methods
         public override decimal GetValueToPay()
         {
