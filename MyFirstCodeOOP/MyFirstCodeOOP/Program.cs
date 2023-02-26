@@ -1,4 +1,7 @@
-﻿using System;
+﻿using MyFirstCodeOOP.Helper;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace MyFirstCodeOOP
 {
@@ -57,7 +60,10 @@ namespace MyFirstCodeOOP
 
 
                 };
-                Console.WriteLine(salaryEmployee);
+                //Console.WriteLine(salaryEmployee);
+
+
+
                 Console.WriteLine(" ");
                 Console.WriteLine("***********************");
                 Console.WriteLine("* COMMISSION EMPLOYEE *");
@@ -88,7 +94,7 @@ namespace MyFirstCodeOOP
                     CommissionPercentage = commissionpercentage,
                     Sales = sales,
                 };
-                Console.WriteLine(commissionEmployee);
+                //Console.WriteLine(commissionEmployee);
 
                 Console.WriteLine(" ");
                 Console.WriteLine("***********************");
@@ -120,7 +126,7 @@ namespace MyFirstCodeOOP
                     Hours = hours,
                     HourValue = hourValue,
                 };
-                Console.WriteLine(contractorEmployee);
+                //Console.WriteLine(contractorEmployee);
 
                 Console.WriteLine(" ");
                 Console.WriteLine("***********************");
@@ -157,8 +163,11 @@ namespace MyFirstCodeOOP
                     Sales = sales,  
                     Base = salaryBase,
                 };
-                Console.WriteLine(baseCommissionEmployee);
+                //Console.WriteLine(baseCommissionEmployee);
 
+
+                EmployeeHelper employeeHelper = new EmployeeHelper(salaryEmployee, commissionEmployee, contractorEmployee, baseCommissionEmployee);
+                Console.WriteLine($"Total payroll:................{employeeHelper.GetPayrollFromActiveEmployees():C2}");
 
 
 
